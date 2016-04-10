@@ -14,5 +14,7 @@ namespace Supportal
         
         [StringLength(101)]
         public string Server { get; set; }
+
+
     }
 }
