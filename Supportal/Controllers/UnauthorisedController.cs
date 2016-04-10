@@ -13,6 +13,7 @@ namespace Supportal.Areas.Steria.Controllers
         {
             Session.Abandon();
             return View();
+
         }
     }
 }
