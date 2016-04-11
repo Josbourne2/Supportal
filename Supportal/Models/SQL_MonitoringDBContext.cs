@@ -14,5 +14,6 @@ namespace Supportal
         }
 
         public DbSet<Mon_Instance> Mon_Instance { get; set; }
+
     }
 }
