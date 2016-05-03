@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="bd6e8dd4-0dcb-40e4-86d8-279d9a175438" ChangeDateTime="05/03/2016 19:05:34">
+    <Property Name="ElementName" Value="[dbo].[Permissions_Resources].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Permissions_Resources]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ResourceId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="77f3ac78-4476-4c9c-8694-b3be3caadbd6" ChangeDateTime="05/03/2016 19:22:51">
+    <Property Name="ElementName" Value="[dbo].[FK_Executables_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Executables]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Executables_To_ExecutableTypes]" />
+  </Operation>
+</Operations>

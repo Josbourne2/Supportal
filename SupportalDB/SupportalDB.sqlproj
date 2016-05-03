@@ -68,8 +68,19 @@
     <Build Include="dbo\Tables\PERMISSIONS.sql" />
     <Build Include="dbo\Tables\LNK_USER_ROLE.sql" />
     <Build Include="dbo\Tables\LNK_ROLE_PERMISSION.sql" />
+    <Build Include="dbo\Tables\Resources.sql" />
+    <Build Include="dbo\Tables\ResourceTypes.sql" />
+    <Build Include="dbo\Tables\Permissions_Resources.sql" />
+    <Build Include="dbo\Tables\Executables.sql" />
+    <Build Include="dbo\Tables\ExecutableTypes.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SupportalDB.publish.Development.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="SupportalDB.refactorlog" />
   </ItemGroup>
 </Project>
