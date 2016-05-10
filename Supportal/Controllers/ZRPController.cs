@@ -1,27 +1,31 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Web;
-//using System.Web.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
 
-//namespace Supportal.Controllers
-//{
-//    public class ZRPController : Controller
-//    {
-//        // GET: ZRP
-//        public ActionResult Index()
-//        {
-//            //Get ZRP Database servers
-//            SQL_MonitoringDBContext _db = new SQL_MonitoringDBContext();
+namespace Supportal.Controllers
+{
+    [RBAC]
+    public class ZRPController : Controller
+    {
+        // GET: ZRP
+        public ActionResult Index()
+        {
+            //Get ZRP Database servers
 
-//            var model = from servers in _db.Mon_Instance
-//                        where servers.Server.Contains("ZRP")
-//                        select servers.Server;
+            
+            SQL_MonitoringDBContext _db = new SQL_MonitoringDBContext();
 
+            var model = from r in _db.Mon_Instance
+                        where r.Server.Contains("ZRP")
+                        select r;
+            
 
-//            return View();
-//        }
-//    }
+            return View(model);
+        }
+    }
+}
 
 //        //// GET: ZRP/Details/5
 //        //public ActionResult Details(int id)

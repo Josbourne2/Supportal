@@ -21,6 +21,7 @@
     <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -236,10 +237,9 @@
     <Content Include="Views\Admin\PermissionIndex.cshtml" />
     <Content Include="Views\Admin\_ListRolesTable4Permission.cshtml" />
     <Content Include="Views\Admin\_AddRole4Permission.cshtml" />
+    <Content Include="Views\ZRP\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\ZRP\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config">
       <SubType>Designer</SubType>

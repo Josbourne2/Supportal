@@ -8,7 +8,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Supportal
 {
     public class Mon_Instance
-    {   
+    {
+
+        
         [Key]
         public int Id { get; set; }
         
